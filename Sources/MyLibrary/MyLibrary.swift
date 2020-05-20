@@ -6,6 +6,10 @@ public struct MyLibrary {
         @State  var placeholder:String
         @Binding var text: String
         
+        /// textfeild reusable
+        /// - Parameters:
+        ///   - placeholder: berfore written anything
+        ///   - text: text that bind to the type to the field
         public init(placeholder:String, text:Binding<String>){
             self._placeholder = State(initialValue: placeholder)
             self._text = text
